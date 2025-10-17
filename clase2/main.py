@@ -1,5 +1,6 @@
 # El numeral es un comentario
 
+
 """ esto es un comentario en bloques
     y puede ocupar varias lineas """
     
@@ -22,5 +23,5 @@
     print(type(precio)) # imprime el tipo de dato de la variable precio
     print(type(nombre)) # imprime el tipo de dato de la variable nombre
     print(type(es_estudiante)) # imprime el tipo de dato de la variable es_estudiante
-    
-    
+    "
+    print("Fin del programa") # indica el fin del programa
