@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Fondo general */
+body {
+  height: 100vh;
+  background: linear-gradient(160deg, #5a67d8, #3182ce);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a202c;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  color: #2b6cb0;
+}
+
+/* Formulario */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+
+.input-group input {
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #63b3ed;
+  box-shadow: 0 0 0 2px #bee3f8;
+}
+
+/* Botones de operaciones */
+.operations {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.operations button {
+  flex: 1;
+  background: #ebf8ff;
+  border: 1px solid #90cdf4;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.operations button.active {
+  background: #4299e1;
+  color: white;
+  border-color: #2b6cb0;
+}
+
+.operations button:hover {
+  background: #bee3f8;
+}
+
+/* Botones principales */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.primary {
+  flex: 1;
+  background: #2b6cb0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background: #2c5282;
+}
+
+.secondary {
+  flex: 1;
+  background: #edf2f7;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.secondary:hover {
+  background: #e2e8f0;
+}
+
+/* Resultado */
+.result {
+  text-align: center;
+}
+
+.result label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#result-display {
+  display: inline-block;
+  min-width: 120px;
+  background: #f7fafc;
+  border: 2px solid #cbd5e0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    padding: 20px;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+}

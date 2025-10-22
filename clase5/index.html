@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Calculadora Simple</h1>
+
+    <section class="calculator">
+      <form id="calc-form" autocomplete="off">
+        <div class="inputs">
+          <div class="input-group">
+            <label for="input-a">Número A</label>
+            <input id="input-a" name="a" type="number" step="any" placeholder="Ej: 10" required>
+          </div>
+          <div class="input-group">
+            <label for="input-b">Número B</label>
+            <input id="input-b" name="b" type="number" step="any" placeholder="Ej: 5" required>
+          </div>
+        </div>
+
+        <div class="operations">
+          <button type="button" id="btn-add" data-op="+">+</button>
+          <button type="button" id="btn-sub" data-op="-">−</button>
+          <button type="button" id="btn-mul" data-op="*">×</button>
+          <button type="button" id="btn-div" data-op="/">÷</button>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="btn-equals" class="primary">Calcular</button>
+          <button type="button" id="btn-clear" class="secondary">Limpiar</button>
+        </div>
+
+        <div class="result">
+          <label for="result-display">Resultado</label>
+          <output id="result-display">—</output>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
